@@ -1,0 +1,87 @@
+# The primary author of this blog.
+# Must be the same as `author` in `_config.yml`.
+# Change `qwtel` to your shortname (used in the front matter to set a page's author, e.g. `author: qwtel`).
+author1:
+  name:              Alexandros Tsaptsinos
+  email:             alextsap@stanford.edu
+
+  # Used at the bottom of each page and at the top of the `about` layout
+  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
+  about:             |
+    I am a second year MS student at [Stanford University](https://www.stanford.edu/) as part of [ICME](https://icme.stanford.edu/). I am interested in the use of machine learning in the music industry, as well as the development of data-based personalised education platforms.
+
+    Previously, I graduated from [Pembroke College](https://www.pmb.ox.ac.uk/) in the [University of Oxford](http://www.ox.ac.uk/) with an MMath in Mathematics.
+
+    You can find some of my projects on my [Github](https://github.com/alexTsaptsinos). I do my best at curating interesting playlists on my [Spotify](https://open.spotify.com/user/1160348824), have a listen!
+
+  # This photo will be used in the about section
+  picture:            /assets/img/me_photo.jpg
+    #path:            /assets/img/me_photo.jpg
+    # srcset is optional, but can be used to provide higher res versions for retina displays
+    #srcset:
+      #1x:            https://placehold.it/128x128
+      #2x:            https://placehold.it/256x256
+
+  # Social media icons in sidebar
+  # Comment/uncommet to show/hide
+  # Rearrange to change the order in which they appear
+  social:
+    github:          alexTsaptsinos
+    linkedin:        alextsaptsinos
+    spotify:         1160348824
+    email:           mailto:alextsap@stanford.edu
+      #twitter:         <username>
+    #rss:             https://<url>/feed.xml
+    # facebook:        <username>
+    # google:          <number>
+    # vk:              <username>
+    # youtube:         <string_string_string>
+    # vimeo:           <username>
+    # vine:            <username>
+    # soundcloud:      <username>
+    # lastfm:          <username>
+    # instagram:       <username>
+    # flickr:          <string@string>
+    # 500px:           <username>
+    # dribbble:        <username>
+    # behance:         <username>
+    # deviantart:      <username>
+    # ello:            <username>
+    # twitch:          <username>
+    # steam:           <number>
+    # reddit:          <username>
+    # tumblr:          <username>
+    # pinterest:       <username>
+    # foursquare:      <number>
+    # yelp:            <string>
+    # stackoverflow:   <number/username>
+    # npm:             <username>
+    # hackernews:      <username>
+    # trello:          <firstnamelastname>
+    # xing:            <firstname_lastname_counter>
+    # blogger:         <number>
+    # delicious:       <username>
+    # stumbleupon:     <username>
+    # paypal:          <username>
+    # download:        https://github.com/qwtel/hydejack/archive/v6.6.1.zip
+
+  # Used by `jekyll-seo-tag`:
+  #twitter:           <username>
+
+# Another author
+author2:
+  name:              <firtname> <lastname>
+  email:             <mail@domain.tld>
+  about:             |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    Open `_data/authors.yml` to edit this text.
+  picture:           https://placehold.it/128x128
+  twitter:           <username>
+  github:            <username>
+  accent_color:      '#268bd2'
+  accent_image:
+    background:      '#202020'
+    overlay:         false

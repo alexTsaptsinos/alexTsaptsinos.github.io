@@ -1,101 +1,112 @@
-# Strata for Jekyll
+# Hydejack
+[![Gem Version](https://badge.fury.io/rb/jekyll-theme-hydejack.svg)](https://badge.fury.io/rb/jekyll-theme-hydejack)
 
-A simple, responsive blog theme for the [Jekyll](http://jekyllrb.com) static site generator using [HTML5 UP's Strata](http://html5up.net/strata) design.
+**Hydejack** is a Jekyll theme with JavaScript powers, combining the best of static sites and modern web apps.
+It features a suite of JavaScript that makes the page feel like an app, without sacrificing backwards-compatibility,
+page-load speed or SEO.
 
-![preview](preview.jpg)
+> Your presence on the web — A [blog], a [portfolio] and a [resume].
 
-Browse the [demo](http://davidforster.com/strata-jekyll/).
+**Hydejack** aims to be the complete package for professionals on the web.
+It features a blog suitable for both prose and technical documentation,
+a showcase for your projects, and a resume that fits with the rest of the design.
 
-## How to use
+![Screenshot](https://qwtel.com/assets/img/projects/default.jpg)
 
-### Quick start
-
-If you just want to get a blog up & running at [GitHub Pages](https://pages.github.com) then simply fork this repository to your own GitHub account and name the new repository *\<yourgithubusername\>.github.io*. GitHub should then start hosting your site at *http://\<yourrgithubusername\>.github.io/*. If you'd like to use your own domain name you can follow GitHub's guide to using a [custom domain](https://help.github.com/articles/using-a-custom-domain-with-github-pages/).
-
-Edit the `_config.yml` file and use the options available in the theme, as mentioned below in the features section, to customise your site.
-
-I recommend Development Seed's awesome [Prose](http://prose.io) editor to write your posts.
-
-### Local development
-
-If you want to run and develop locally on your own computer then you'll need the Ruby programming language and Jekyll installed. The Jekyll website has a handy [installation guide](http://jekyllrb.com/docs/installation/) in their online documentation. Once installed, you can download or clone this repository and run `bundle exec jekyll serve` from the root.
+## Demo
+It's best to just [see it in action](https://qwtel.com/hydejack/).
 
 ## Features
+Both versions include *all* of these features:
 
-### Disqus comments
+* Full in-app page loading, powered by [hy-push-state]
+* A customizable sidebar that turns into a drawer menu on mobile, powered by [hy-drawer]
+* Advanced FLIP animations, inspired by Material Design
+* Good [Google PageSpeed Score][gpss][^1]
+* Higher *perceived speed* thanks to content pre-fetching
+* [Syntax highlighting][syntax], powered by [Rouge]
+* [LaTeX math blocks][latex], powered by [KaTeX]
+* Change the wording of built-in strings and possibly translate in other languages
+* Support for categories and tags
+* Built-in icons for many social networks
+* Simple and semantic HTML — can be viewed even with text-based browsers
+* Author section below each article and support for multiple authors
+* Progressive enhancement — sacrifice features, not content
+* Google Analytics and Google Fonts support
+* Disqus comments
+* Print layout — Used to render Hydejack's [PDF documentation][pdf]
+* Blog layout via `jekyll-paginate` (optional)
+* SEO meta tags via `jekyll-seo-tag` (optional)
+* Github avatars via `jekyll-avatar` (optional)
+* Gist support via `jekyll-gist` (optional)
 
-[Disqus](https://disqus.com) comments appear beneath posts. Add your Disqus website's shortname to `_config.yml` as `disqus_shortname:`. Leave `disqus_shortname` blank to disable comments completely or add `disqus: disabled` to a post's front matter to disable comments just for that page.
+## Documentation
+Hydejack is well documented. You can read the docs [on the Jekyll site][docs], or [on GitHub][wiki], or [download the PDF][pdf].
 
-### Open Graph (Facebook) and Twitter Card meta tags
+## Download
+There are two versions of **Hydejack**: The *free version* includes basic blogging functionality,
+as did previous versions of the theme.
+The *PRO version* includes additional features for professionals:
+A [portfolio], a [resume] layout and a [welcome] page to feature your favorite projects and posts.
 
-All pages have Open Graph metadata added.
+This table details what is and isn't included in each respective version.
 
-All pages have Twitter Card metadata, though this requires `twitter_username:` to be configured in `_config.yml`. Twitter Card titles are trunacted at 70 characters and descriptions at 200 characters as per Twitter requirements.
+|                                     | Free               | PRO                |
+|:------------------------------------|:------------------:|:------------------:|
+| Blog                                | &#x2714;           | &#x2714;           |
+| [Features][feat]                    | &#x2714;           | &#x2714;           |
+| [Portfolio] Layout                  |                    | &#x2714;           |
+| [Resume] Layout                     |                    | &#x2714;           |
+| [Welcome] Layout                    |                    | &#x2714;           |
+| [Newsletter Box][news]              |                    | &#x2714;           |
+| [Custom Forms][forms]               |                    | &#x2714;           |
+| License                             | [GPL-3.0][license] | [PRO]              |
+| Price                               | Free               | $29                |
+|| [Download on GitHub][github]<br/> – or – <br/>[Use the RubyGem][gem] | [Buy Now][buy] [^2] |
 
-Both Open Graph and Twitter Cards can show images if you specify `image: <image url>` in a page's front matter.
 
-### RSS and Atom feeds
+[^1]: Actual page load speed depends on your hosting provider, resolution of embedded images and usage of 3rd party plugins.  
+[^2]: Transactions secured by [Stripe](https://stripe.com). Downloads handled by [Simple Goods](https://simplegoods.co/).  
 
-The last 10 posts are available in RSS and Atom format at `rss.xml` and `atom.xml`. Both feeds are linked to from every page's metadata. The feed icon in the footer is configurable by setting `feed_icon:` in `_config.yml` to `rss` or `atom`, or the property can be left blank to remove it completely.
+~~~
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+~~~
 
-### Feed footer
+[blog]: https://qwtel.com/hydejack/blog/
+[portfolio]: https://qwtel.com/hydejack/projects/
+[resume]: https://qwtel.com/hydejack/resume/
+[download]: https://qwtel.com/download/
+[welcome]: https://qwtel.com/hydejack/
+[forms]: https://qwtel.com/hydejack/docs/7.1.1/forms-by-example/
 
-A footer is added to every post in both the RSS and Atom feeds. This is configurable by editing `_includes/feed-footer.html`.
+[feat]: https://qwtel.com/hydejack/#features
+[news]: https://qwtel.com/hydejack/#newsletter-subscription-box
+[syntax]: https://qwtel.com/hydejack/#syntax-highlighting
+[latex]: https://qwtel.com/hydejack/#latex-math-blocks
 
-### Sitemap
+[license]: LICENSE.md
+[pro]: licenses/PRO.md
+[docs]: docs/7.1.1/index.md
 
-Based on [David Ensinger's sitemap](http://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-jekyll/), supported front matter is:
+[github]: https://github.com/qwtel/hydejack/releases
+[gem]: https://rubygems.org/gems/jekyll-theme-hydejack
+[buy]: https://app.simplegoods.co/i/AQTTVBOE
 
-- `sitemap.exclude: true` for pages, `post.published: false` for posts
-- `sitemap.lastmod` (defaults to the post or page date)
-- `sitemap.changefreq` (defaults to monthly)
-- `sitemap.priority` (defaults to 0.5)
+[gpss]: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fqwtel.com%2Fhydejack%2F
+[wiki]: https://github.com/qwtel/hydejack/blob/master/docs/7.1.1/index.md
+[pdf]: https://github.com/qwtel/hydejack/releases/download/v7.1.1/Documentation._.Hydejack.pdf
+[hy-push-state]: https://qwtel.com/hy-push-state/
+[hy-drawer]: https://qwtel.com/hy-drawer/
+[rouge]: http://rouge.jneen.net
+[katex]: https://khan.github.io/KaTeX/
+[tinyletter]: https://tinyletter.com/
 
-### Footer social media links
-
-Social media icon links in the footer are enabled by adding or removing values for the following sites in `_config.yml`.
-
-- Facebook - `facebook_username:`
-- Twitter - `twitter_username:`
-- LinkedIn - `linkedin_username:`
-- Instagram - `instagram_username:`
-- Pinterest - `pinterest_username:`
-- Flickr - `flickr_username:`
-- GitHub - `github_username:`
-
-You can change the icon order and add more options by editing `_includes/footer.html`. I recommended a maximum number of 5 icons in total (including the feed icon).
-
-### Reading time
-
-Reading time appears on post pages alongside the date and categories if the time is 1 minute or more, based on a reading rate of 180 words per minute (3 per second).
-
-### Pagination
-
-Pagination is set at 5 posts per page, this can be altered by changing the `paginate:` property in `_config.yml`
-
-### Next/Previous posts
-
-The Next and Previous posts are displayed underneath every post (and Disqus comments if enabled) along with their excerpt.
-
-### Custom 404
-
-If you host your site with [GitHub Pages](https://pages.github.com) then a custom 404 page has been added (see `404.md`)
-
-### robots.txt and humans.txt
-
-The theme includes a basic robots.txt file which allows all robots to crawl the entire site and directs them to the sitemap.xml file. There is also a humans.txt file giving credit to Myself ([David Forster](http://davidforster.com)) and AJ, the designer of Strata.
-
-## Acknowledgements
-
-- [AJ](https://twitter.com/n33co) and [HTML5UP](http://html5up.net) for the design of Strata
-- [David Ensinger](http://davidensinger.com) for a bunch of tips and ideas related to Jekyll
-
-## Contributions
-
-Issues, Pull Requests, Tweets and Forks are all greatly appreciated!
-
-## License
-
-The Jekyll theme is licensed under the [MIT](http://choosealicense.com/licenses/mit/) License
-
-The Strata design is licensed under the [Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/) license.
+*[FLIP]: First-Last-Invert-Play. A coding technique to achieve performant page transition animations.
