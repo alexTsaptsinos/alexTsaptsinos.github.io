@@ -4,6 +4,7 @@ title: Classifying Music Genres via Lyrics using a Hierarchical Attention Networ
 description: As part of [CS224N](http://web.stanford.edu/class/cs224n/) here at [Stanford](https://www.stanford.edu/) I began learning about the various uses of deep learning in natural language processing. As part of this course, I decided to begin a project to try and classify music genre using lyrics only which has typically been a tough problem in the music information retrieval (MIR) field. At the culmination of the course I was so invested in the course that I continued working on it and eventually published this research in ISMIR 2017, held in Suzhou, China.
 tags: []
 author: author
+comments: true
 ---
 To begin the project I took inspiration from [the paper by Yang et al.](http://www.aclweb.org/anthology/N16-1174) using a Hierachical Attention Network (HAN) to classify documents. Similarly to documents, lyrics contain a hierachical structure: words go into lines, lines into sections (verse/chorus/...), and sections then form the whole song. Further, from the attention mechanism we can then extract and visualise where the network is applying its weights.
 
