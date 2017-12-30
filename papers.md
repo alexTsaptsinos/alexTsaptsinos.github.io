@@ -9,7 +9,7 @@ order: 3
 [Lyrics-based Music Genre Classification Using a Hierarchical Attention Network](lyricspaper.pdf).  
 In proceedings of ISMIR 2017. Code available [here](https://github.com/alexTsaptsinos/lyricsHAN).
 
-[Learning Intrinsic Reward Functions for Atari](ataripaper.pdf).
+[Learning Intrinsic Reward Functions for Atari](ataripaper.pdf).   
 Project as part of CS221: AI at Stanford University. Co-authored with Sofia Samaniego de la Fuente and Simon Gleeson.
 
 ## 2016
