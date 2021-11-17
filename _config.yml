@@ -17,12 +17,11 @@ baseurl:               ''
 
 # A short description of the page used for the meta description tag.
 description:           >
-  **Alex Tsaptsinos**, Stanford ICME MS Student
+  **Alex Tsaptsinos**
   Music, Machine Learning, Football
 
 # A shorter description for the sidebar.
 tagline:               >
-  Stanford ICME MS Student
   Music, Machine Learning, Football
 
 # A list of keywords for your blog, will be used as fallback
@@ -36,10 +35,10 @@ logo:                  /assets/icons/icon.png
 # Duplication is necessary due to the jekyll-feed plugin.
 author:
   name:                Alexandros Tsaptsinos
-  email:               <alextsap@stanford.edu>
+  email:               <atsaptsinos@gmail.com>
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © Alexandros Tsaptsinos 2017
+copyright:             © Alexandros Tsaptsinos 2021
 
 # Format of the permalinks
 permalink:             pretty
@@ -239,3 +238,5 @@ sass:
 # so that the location of the feed XML stays the same.
 # feed:
 #   path:                atom.xml
+
+theme: jekyll-theme-minimal
